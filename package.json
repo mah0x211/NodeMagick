@@ -1,6 +1,6 @@
 {
-    "name" : "NodeMagic",
-    "homepage": "http://github.com/mah0x211/NodeMagic",
+    "name" : "NodeMagick",
+    "homepage": "http://github.com/mah0x211/NodeMagick",
     "version" : "0.0.1",
     "main" : "./index",
     "directories" : {
@@ -21,10 +21,10 @@
     ],
     "repository": {
         "type" : "git",
-        "url": "http://github.com/mah0x211/NodeMagic.git" 
+        "url": "http://github.com/mah0x211/NodeMagick.git" 
     },
     "bugs" : {
         "mail" : "" ,
-        "url" : "http://github.com/mah0x211/NodeMagic/issues" 
+        "url" : "http://github.com/mah0x211/NodeMagick/issues" 
     }
 }

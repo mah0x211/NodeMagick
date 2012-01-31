@@ -224,7 +224,7 @@ Handle<Value> NodeMagick::New( const Arguments& argv )
     
     if( !ctx->wand ){
         delete ctx;
-        retval = ThrowException( Exception::Error( String::New("error") ) );
+        retval = ThrowException( Exception::Error( String::New(strerror(ENOMEM)) ) );
     }
     else {
         ctx->Wrap( argv.This() );
@@ -371,8 +371,12 @@ Handle<Value> NodeMagick::fnSave( const Arguments &argv )
     }
     else {
         const char *path = strdup( *String::Utf8Value( argv[0] ) );
-        ctx->saveImage( path );
+        retval = ctx->saveImage( path );
         free((void*)path);
+        // failed
+        if( IsDefined( retval ) ){
+            retval = ThrowException( Exception::Error( retval->ToString() ) );
+        }
     }
     
     return scope.Close( retval );

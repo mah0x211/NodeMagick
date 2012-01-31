@@ -1,0 +1,30 @@
+{
+    "name" : "NodeMagic",
+    "homepage": "http://github.com/mah0x211/NodeMagic",
+    "version" : "0.0.1",
+    "main" : "./index",
+    "directories" : {
+        "lib" : "./lib" 
+    },
+    "scripts" : {
+        "install" : "./install.sh" 
+    },
+    "engines" : {
+        "node" : ">= 0.4.12" 
+    },
+    "maintainers": [
+        {
+            "name": "Masatoshi Teruya",
+            "email": "mah0x211@gmail",
+            "web": "http://kontext.jp/" 
+        } 
+    ],
+    "repository": {
+        "type" : "git",
+        "url": "http://github.com/mah0x211/NodeMagic.git" 
+    },
+    "bugs" : {
+        "mail" : "" ,
+        "url" : "http://github.com/mah0x211/NodeMagic/issues" 
+    }
+}

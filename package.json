@@ -1,7 +1,7 @@
 {
     "name" : "NodeMagick",
     "homepage": "http://github.com/mah0x211/NodeMagick",
-    "version" : "0.0.1",
+    "version" : "0.0.2",
     "main" : "./index",
     "directories" : {
         "lib" : "./lib" 
@@ -10,7 +10,7 @@
         "install" : "./install.sh" 
     },
     "engines" : {
-        "node" : ">= 0.4.12" 
+        "node" : ">= 0.4.7" 
     },
     "maintainers": [
         {
